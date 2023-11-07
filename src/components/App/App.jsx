@@ -24,10 +24,13 @@ function App() {
                 <Route exact path="/about">
                     <About />
                 </Route>
-                <StudentForm />
-
-                <p>Student list:</p>
-                <StudentList />
+                <Route exact path="/">
+                    <StudentForm />
+                </Route>
+                <Route exact path="/allStudents">
+                    <p>Student list:</p>
+                    <StudentList />
+                </Route>
             </Router>
         </div>
     );
