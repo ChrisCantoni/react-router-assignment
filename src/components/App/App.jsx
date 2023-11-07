@@ -4,6 +4,7 @@ import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import './App.css';
 import StudentForm from '../StudentForm/StudentForm.jsx';
 import StudentList from '../StudentList/StudentList.jsx';
+import About from '../About/About.jsx';
 
 function App() {
     return (
@@ -20,6 +21,9 @@ function App() {
                 </nav>
                 </header>
                 <br/>
+                <Route exact path="/about">
+                    <About />
+                </Route>
                 <StudentForm />
 
                 <p>Student list:</p>
