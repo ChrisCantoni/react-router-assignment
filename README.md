@@ -25,3 +25,19 @@ Add routing and navigation to this app!
 - Show the student list view from the /allStudents route.
 - Keep the Form in the /home route
    - After successfully adding a new student, move us to `/allStudents`, but only on success
+
+
+<!-- Destructuring - Automatically pulling out a variable from an object or array -->
+<!-- Simply a shortcut for reducing amount of code you write -->
+
+const person = {
+   firstName: 'Chris',
+   lastName: 'Black',
+};
+
+let userFirstName = person.firstName
+let userLastName = person.lastName
+
+<!-- Destructuring is: -->
+let { firstName, lastName } = person;
+<!-- Like an object in reverse -->
